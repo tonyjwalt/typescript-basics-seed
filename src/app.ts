@@ -1,1 +1,8 @@
-console.log('Hello TypeScript!');
+const pizza = {
+  name: 'Pepperoni',
+  price: 15
+};
+
+const toppings = ['pepperoni'];
+
+const order = 
