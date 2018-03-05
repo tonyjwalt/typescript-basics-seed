@@ -1,10 +1,11 @@
+(() => {
 const pizzas = [
   { name: 'Pepperoni', toppings: ['pepperoni'] }
 ];
 
 const mappedPizzas = pizzas.map( pizza => pizza.name.toUpperCase() );
 
-const arrowFn_pizza = {
+const pizza = {
   name: 'Blazing Inferno',
   getNameArrow: () => pizza.name,
   getNameCtx: function () {
@@ -13,5 +14,7 @@ const arrowFn_pizza = {
 };
 
 console.log(mappedPizzas);
-console.log('arrow', arrowFn_pizza.getNameArrow());
-console.log('context', arrowFn_pizza.getNameCtx());
+console.log('arrow', pizza.getNameArrow());
+console.log('context', pizza.getNameCtx());
+
+})();
